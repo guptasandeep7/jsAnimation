@@ -12,13 +12,13 @@ function day(){
 
     setTimeout(() => {
         if(count%2!==0){
-            moon.style.backgroundImage = "url(/photos/cloud2.png)";
-            container.style.backgroundImage="url(/photos/snowBackground.jpg)"
+            moon.style.backgroundImage = "url(photos/cloud2.png)";
+            container.style.backgroundImage="url(photos/snowBackground.jpg)"
             count++;
         }
         else{
-            moon.style.backgroundImage = "url(/photos/moon.png)";
-            container.style.backgroundImage="url(/photos/cristmas.jpg)"
+            moon.style.backgroundImage = "url(photos/moon.png)";
+            container.style.backgroundImage="url(photos/cristmas.jpg)"
             count++;
         }
         

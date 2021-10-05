@@ -58,13 +58,13 @@ function animate(){
         //     i=0;
         // }
         for (const snow of snows) {
-            snow.style.top = snow.offsetTop +Math.floor(Math.random()+2) +"px";
+            snow.style.top = snow.offsetTop +Math.floor(Math.random()+3) +"px";
             if(snow.offsetTop>window.innerHeight){
                 snow.style.top="0px";
             }
         }
         
-    }, 10);
+    }, 20);
     
     
 
