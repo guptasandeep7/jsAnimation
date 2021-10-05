@@ -9,11 +9,39 @@
     overflow: hidden;
     width: 100%;
     height: 100vh;
-    background-repeat: no-repeat;
+    background-repeat: repeat;
     background-size: cover;
-    background-position-y: -100px;
     background-image: url(/photos/cristmas.jpg);
 }
+
+/* #cloud{
+    position: absolute;
+    display: inline-block;
+    width: 100%;
+    height: 50vh;
+    background-image: url("/photos/cloud.png");
+    background-size: contain;
+    background-repeat: repeat-x;
+    filter: blur(1px);
+} */
+#moon{
+    position: absolute;
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    background-size: contain;
+    right: 250px;
+    top: 50px;
+    background-image: url("/photos/moon.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+#moon:hover{
+    transform: scale(1.5);
+}
+
+
 
 .snow{
     position: absolute;
@@ -21,9 +49,10 @@
     display: inline-block;
     border-radius: 50%;
     filter: blur(1px);
+    
 
 }
-#santa{
+/* #santa{
     position: absolute;
     width: 100px;
     height: 100px;
@@ -32,4 +61,20 @@
     background-image: url("/photos/santa1.png");
     background-repeat: no-repeat;
     background-size: contain;
-}
+} */
+
+/* #snowman{
+    position: absolute;
+    width:200px;
+    height:200px;
+    right: 50px;
+    bottom: 40px;
+    transform: scale(1.5);
+    background-image: url("/photos/snowman.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    transform: rotateY(150deg);
+
+} */
+
+
