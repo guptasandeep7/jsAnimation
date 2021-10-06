@@ -13,11 +13,11 @@ function day(){
        
        if(count%2===0){
         
-        container.setAttribute("style", "background-image: url(../photos/wallpaperflare.com_wallpaper.jpg)");
+        container.setAttribute("style", "background-image: url(photos/wallpaperflare.com_wallpaper.jpg)");
     }
     else{
 
-        container.setAttribute("style", "background-image: url(../photos/night.jpg)");
+        container.setAttribute("style", "background-image: url(photos/night.jpg)");
     }
         var j = setInterval(() => {
            moon.style.left = (moon.offsetLeft -1)+"px";
