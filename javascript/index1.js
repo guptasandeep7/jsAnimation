@@ -17,7 +17,7 @@ function day(){
     }
     else{
         moon.style.backgroundImage = "url('../photos/moon.png')";
-        container.style.backgroundImage="url('../photos/night.jpg')";
+        container.style.backgroundImage="url(../photos/night.jpg)";
     }
         var j = setInterval(() => {
            moon.style.left = (moon.offsetLeft -1)+"px";
