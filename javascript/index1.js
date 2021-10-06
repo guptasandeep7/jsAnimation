@@ -7,12 +7,18 @@ function day(){
    var i = setInterval(() => {
            moon.style.left = moon.offsetLeft +5+"px";
           if(moon.offsetLeft>window.innerWidth){
+            if(count%2===0){
+                moon.setAttribute("style", "background-image: url(photos/moon.png)");
+            }
+            else{
+        
+                moon.setAttribute("style", "background-image: url(photos/blueMoon.png)");
+            }
               clearInterval(i);
           }
-       },  1);
+       },  5);
        
        if(count%2===0){
-        
         container.setAttribute("style", "background-image: url(photos/wallpaperflare.com_wallpaper.jpg)");
     }
     else{
@@ -37,7 +43,7 @@ function day(){
 
            }
           
-       }, 1);
+       }, 5);
 
     
 function celebrate(){
