@@ -12,12 +12,12 @@ function day(){
        },  1);
        
        if(count%2===0){
-        moon.style.backgroundImage = 'url("../photos/moon.png")';
-        container.style.backgroundImage='url("../photos/wallpaperflare.com_wallpaper.jpg")';
+        moon.style.backgroundImage = "url('../photos/moon.png')";
+        container.style.backgroundImage="url('../photos/wallpaperflare.com_wallpaper.jpg')";
     }
     else{
-        moon.style.backgroundImage = 'url("../photos/moon.png")';
-        container.style.backgroundImage='url("../photos/night.jpg")';
+        moon.style.backgroundImage = "url('../photos/moon.png')";
+        container.style.backgroundImage="url('../photos/night.jpg')";
     }
         var j = setInterval(() => {
            moon.style.left = (moon.offsetLeft -1)+"px";
