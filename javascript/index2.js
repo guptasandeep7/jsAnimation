@@ -16,7 +16,6 @@ function animate(){
             snow.style.top = "-"+pos+"px";
 
         }
-       
 
     }
 
