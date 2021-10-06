@@ -9,7 +9,7 @@ function day(){
           if(moon.offsetLeft>window.innerWidth){
               clearInterval(i);
           }
-       },  0.1*count);
+       },  1);
        
        if(count%2===0){
         moon.style.backgroundImage = 'url("../photos/moon.png")';
@@ -37,7 +37,7 @@ function day(){
 
            }
           
-       }, 0.1*count);
+       }, 1);
 
     
 function celebrate(){
