@@ -5,28 +5,31 @@ function day(){
    var container = document.getElementById("container");
 
    var i = setInterval(() => {
-           moon.style.left = moon.offsetLeft +10+"px";
+           moon.style.left = moon.offsetLeft +5+"px";
           if(moon.offsetLeft>window.innerWidth){
               clearInterval(i);
           }
-       },  10);
-  
+       },  0.1*count);
+       
+       if(count%2===0){
+        moon.style.backgroundImage = 'url("../photos/moon.png")';
+        container.style.backgroundImage='url("../photos/wallpaperflare.com_wallpaper.jpg")';
+    }
+    else{
+        moon.style.backgroundImage = 'url("../photos/moon.png")';
+        container.style.backgroundImage='url("../photos/colorNight.jpg")';
+    }
         var j = setInterval(() => {
-           moon.style.left = (moon.offsetLeft -10)+"px";
+           moon.style.left = (moon.offsetLeft -1)+"px";
            if(moon.offsetLeft<(window.innerWidth-350)){
+
             clearInterval(j);
 
                 if(count%2===0){
-                    moon.style.backgroundImage = "url(../photos/moon.png)";
-                    container.style.backgroundImage="url(../photos/wallpaperflare.com_wallpaper.jpg)";
                     count++;
                     animate();
-
-
                 }
                 else{
-                    moon.style.backgroundImage = "url(../photos/moon.png)";
-                    container.style.backgroundImage="url(../photos/colorNight.jpg)";
                     count++;
                     celebrate();
 
@@ -34,16 +37,12 @@ function day(){
 
            }
           
-       }, 20);
+       }, 0.1*count);
 
     
 function celebrate(){
     clearInterval(s);
     var snows = document.getElementsByClassName("snow");
-    var container = document.getElementById("container");
-    var moon = document.getElementById("moon");
-
-    
    
     for (const snow of snows) {
         snow.style.filter = "blur(0px)";
@@ -79,7 +78,7 @@ function celebrate(){
             }
         }
         
-    }, 200);
+    }, 20);
 
 }
 
